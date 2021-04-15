@@ -1,0 +1,96 @@
+.wrapper{
+    width: 100%;
+    height: 100%;
+    .block__wrapp{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .body{
+            width: 600px;
+            height: 600px;
+    
+            .box{
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                .box__had{
+                    width: 200px;
+                    height: 50px;
+                    border: 1px solid black;
+                    margin-top: 50px;
+                    background-color: black;
+                }
+            }
+            .box__1{
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                .box__name{
+                    width:400px ;
+                    height: 100%;
+                    background-color: black;
+                    h1{
+                        font-size: 40px;
+                        color: blanchedalmond;
+                        text-align: center;
+                        padding-top: 25px;
+                    }
+                }
+            }
+            .box__2{
+                width: 100%;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                .box__body{
+                    width: 400px;
+                    height: 100%;
+                    border: 2px solid black;
+                    display: flex;
+                    justify-content: center;
+                    .container{
+                     width: 380px;
+                     .row__1,
+                     .row__2,
+                     .row__3,
+                     .row__4,
+                     .row__5,
+                     .row__6,
+                     .row__7,
+                     .row__8{
+                         width: 100%;
+                         height: calc(90% / 8);
+                         margin-top: 4.5px;                      
+                     }
+                     .row__1{
+                        animation-name:charge ;
+                        position: relative;
+                        animation-duration: 2s;
+                        animation-delay: 2s;
+                        animation-iteration-count: infinite;
+                     }
+                    }
+                    @keyframes charge {
+                        0% {
+                          height: 50px;
+                            background-color: red;
+                        }
+                        25%{
+                            background-color: orange;
+                        }
+
+                        100%{
+                            background-color: chartreuse;
+                        }
+                    }
+                }
+
+            }
+        }
+       
+    }
+}
